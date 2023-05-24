@@ -1,4 +1,4 @@
-const JWT = require("json-webtoken");
+const JWT = require("jsonwebtoken");
 const BigPromise = require("../utils/BigPromise.js");
 require('dotenv').config();
 

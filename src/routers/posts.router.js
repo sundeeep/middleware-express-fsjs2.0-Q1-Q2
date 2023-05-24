@@ -1,4 +1,4 @@
-const express = require("expres");
+const express = require("express");
 const isLoggedIn = require("../middlewares/isLoggedIn.middleware");
 const {getAllPosts} = require("../controllers/posts.controller");
 
