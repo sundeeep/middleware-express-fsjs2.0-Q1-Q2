@@ -11,7 +11,7 @@ iNeuron's FSJS 2.0 Placement Assignment - Express JS Project Q-01 and Q-02
 
 ### Output - Thunder Client
 #### Posts Response without authorization beare token
-![Posts Response without authorization beare token]("./src/assets/withoutauth.png")
+![Posts Response without authorization beare token](./src/assets/withoutauth.png)
 #### Posts Response with authorization beare token
-![Posts Response with authorization beare token]("./src/assets/withauth.png")
+![Posts Response with authorization beare token](./src/assets/withauth.png)
 
