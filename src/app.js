@@ -14,6 +14,9 @@ app.use(cors());
 app.use(cookieParser());
 
 const authRouter = require("./routers/auth.router");
+const postsRouter = require("./routers/posts.router");
+
 app.use('/api/v1/', authRouter)
+app.use('/api/v1/', postsRouter);
 
 module.exports = app;
