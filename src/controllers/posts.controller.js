@@ -9,12 +9,9 @@ exports.getAllPosts = BigPromise(async (req, res) => {
     async function fetchPostsFromFakeJSONAPI(FETCH_URL){
         const response = await fetch(FETCH_URL);
         const jsonData = await response.json();
-        return jsonData;
+        return jsonData.slice(0,20);
     }
 
-    console.log(posts)
-    //Limit to 20 Posts as your 1st Questions has asked...
-    posts = posts[0, 19]
 
     if (!posts) {
         throw new CustomError("No posts found", 404)
