@@ -15,7 +15,9 @@ const isLoggedIn = BigPromise(async (req, res, next) => {
 
     try {
         const decryptedJWT = JWT.verify(cookieToken, process.env.JWT_SECRET);
+        console.log(decryptedJWT)
          req.user = await User.findById(decryptedJWT._id, "name email role")
+         console.log(req.user)
          next() //proceed to the posts controller to retrieve the posts
     } catch (error) {
         throw new Error("Sorry! You are not authorized to access the posts")

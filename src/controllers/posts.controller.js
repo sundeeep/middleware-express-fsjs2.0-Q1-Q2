@@ -12,6 +12,7 @@ exports.getAllPosts = BigPromise(async (req, res) => {
         return jsonData;
     }
 
+    console.log(posts)
     //Limit to 20 Posts as your 1st Questions has asked...
     posts = posts[0, 19]
 
