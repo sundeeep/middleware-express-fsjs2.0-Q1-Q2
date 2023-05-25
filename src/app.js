@@ -19,4 +19,11 @@ const postsRouter = require("./routers/posts.router");
 app.use('/api/v1/', authRouter)
 app.use('/api/v1/', postsRouter);
 
+app.get('/',(req,res)=>{
+    res.status(200).json({
+        success: true,
+        author: "Sandeep K. Dasari",
+    })
+})
+
 module.exports = app;
